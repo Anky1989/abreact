@@ -73,6 +73,6 @@ console.log(parent);
 // react object use reactDOm and createRoot will assing the a root assign react 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // render method put object on to page 
-root.render(parent));
+root.render(parent);
 
 // its very complex like there JSX comes into picture to reduce and make our life easy

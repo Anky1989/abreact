@@ -1,0 +1,18 @@
+Notes:
+1- react file should be loaded in below seq only otherwise it will raise error
+2- .js file should be after react file loaded otherwise it will not featch react componnets
+3- react object use reactDOm and createRoot will assing the a root assign react 
+4- render method put object on to page 
+5- why we used Crossorigin tag in index.html file:
+    CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page
+    to be requested from another domain outside their own domain. It defines a way of how a browser 
+    and server can interact to determine whether it is safe to allow the cross-origin request.
+6- If we open below file it will show all the react code 
+    https://unpkg.com/react@18.2.0/umd/react.development.js
+    https://unpkg.com/react-dom@18/umd/react-dom.development.js    
+7- why we use two react files ?
+    because react segrigatted DOM and main component in two files 
+8- React.createElement
+    Create new Element in DOM, React elem is a objects at the end of the day 
+    It has three paramter like tag , ID, text
+5- // its very complex like there JSX comes into picture to reduce and make our life easy 
