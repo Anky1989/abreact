@@ -1,0 +1,20 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is React by Ankit Bhatt",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anky1989/abreact.git"
+  },
+  "keywords": [],
+  "author": "Ankit Bhatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anky1989/abreact/issues"
+  },
+  "homepage": "https://github.com/Anky1989/abreact#readme"
+}

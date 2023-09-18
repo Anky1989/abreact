@@ -1,0 +1,22 @@
+1- npm-> its pkg manager and no full form. its standard repo for all the pkgs, libs, utilities 
+    basically npm will manage all these for u. 
+
+2- package.json is the configuration file for npm to manage all the pkgs/ dependecies which will import 
+    e.g. init npm and follw the steps and finally it npm will add package.json file into repo    
+
+3- after npm init we are going to add most common used pkgs into json file e.g. buddler (buddle the files)
+4- most common used buddler like webpack, parcel, vite. basicaly it will buddle the files to push it to production.
+5- React by default used webpack but we will use parcel for our development.
+6- cmds to install parcel 
+    > npm install -D parcel // -D means [dev (-D) and normal dependencies used for development and prod]
+7- after installation parcel version will be added in pkg.json file e.g.
+    ^1.2.3 - What's the difference between tilde(~) and caret(^) in package.json?
+    ^ means we're allowing to auto upgrade if any minor release and ~ will upgrade to major relase automatically 
+8- after intalltion of parcel, it will create new file called package-lock.json 
+    ?? now Q what is diff between package.json and package-lock.json ?
+    **package.json: it will keep the parcel approx version e.g. 2.8.3
+    **package-lock.json: it will lock the exact version that is 2.8.3 and also keep track of all the versions as dependencies.
+Also after parcel installation it will create new folder call node_modules
+    ??now Q is what is node_modules folder ?
+    ** Its contains all the code of parcel that we featched from npm, kind of db which have all modules 
+    
