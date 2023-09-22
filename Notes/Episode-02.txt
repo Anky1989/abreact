@@ -19,4 +19,12 @@
 Also after parcel installation it will create new folder call node_modules
     ??now Q is what is node_modules folder ?
     ** Its contains all the code of parcel that we featched from npm, kind of db which have all modules 
-    
+
+9- No need to put node_modules to git as we can re-create it using commands and it will create unnessary
+space in git as its contains so many files and which in Gbs.
+Best solution to keep node_modules in .gitignore file so during check-in git will igonre the folder and only
+commit the changes which are thr.
+10- also if u have pkg.json and pkg-lock.json then no need to add node_modules, you can generate 
+all modules using these json files which already maintaining the versions. so will only put these .json files to git.
+11- 
+
