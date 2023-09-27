@@ -9,7 +9,8 @@ Notes:
     and server can interact to determine whether it is safe to allow the cross-origin request.
 6- If we open below file it will show all the react code 
     https://unpkg.com/react@18.2.0/umd/react.development.js
-    https://unpkg.com/react-dom@18/umd/react-dom.development.js    
+    https://unpkg.com/react-dom@18/umd/react-dom.development.js   
+    another way we can use react using npm - its recommended way to use react  
 7- why we use two react files ?
     because react segrigatted DOM and main component in two files 
 8- React.createElement

@@ -5,7 +5,7 @@
     e.g. init npm and follw the steps and finally it npm will add package.json file into repo    
 
 3- after npm init we are going to add most common used pkgs into json file e.g. buddler (buddle the files)
-4- most common used buddler like webpack, parcel, vite. basicaly it will buddle the files to push it to production.
+4- most commonnp used buddler like webpack, parcel, vite. basicaly it will buddle the files to push it to production.
 5- React by default used webpack but we will use parcel for our development.
 6- cmds to install parcel 
     > npm install -D parcel // -D means [dev (-D) and normal dependencies used for development and prod]
@@ -20,11 +20,30 @@ Also after parcel installation it will create new folder call node_modules
     ??now Q is what is node_modules folder ?
     ** Its contains all the code of parcel that we featched from npm, kind of db which have all modules 
 
+--Part-2
 9- No need to put node_modules to git as we can re-create it using commands and it will create unnessary
 space in git as its contains so many files and which in Gbs.
 Best solution to keep node_modules in .gitignore file so during check-in git will igonre the folder and only
 commit the changes which are thr.
 10- also if u have pkg.json and pkg-lock.json then no need to add node_modules, you can generate 
 all modules using these json files which already maintaining the versions. so will only put these .json files to git.
-11- 
+11- now lets ignite our app using parcel
+    ran cmd $ npx parcel index.html  --> meaning of npx - executing a pkg
+    it will create server and host our app to localhost 
+    basically parcel will create dev build and host it to localhost e.g. 1234
+12- currently we have used react using CDN links but that is not a good way to do this, we should use npm 
+    to connect react as its recommended way and also CDN is very costly operation when we call react pkg but using npm
+    its much faster mean less n/w call because we have node module.
+    Also its easier to manage dependecies on version.
 
+14- now how do we install react using npm ?
+ $ npm install react  --> we're installing react as dev dependecies
+ $ npm install react-dom  --> installing react-dom as dev dependecies
+
+it will create react module and add dependecies in json-lock file and json file.
+
+15- now if we remove CDN links from index.html and try to run app it will raise error that react not defined.
+    becasue we just intall the react to use the react we need to import it from react module.
+    import React from "react";
+    import ReactDOM "react-dom";
+also we need to add type = "module" in js file under index.html to use app.js file as module script.
