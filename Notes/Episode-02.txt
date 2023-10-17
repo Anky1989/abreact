@@ -47,3 +47,33 @@ it will create react module and add dependecies in json-lock file and json file.
     import React from "react";
     import ReactDOM "react-dom";
 also we need to add type = "module" in js file under index.html to use app.js file as module script.
+
+16- To start local server we need to run following cmd:
+npx parcel index.html // it will create development build 
+npx parcel build index.html // it will create production build 
+
+17- Also when we run above cmd parcel will add two new folders e.g. cache and dist 
+Parcel- Cache: to store app files to build faster
+dist: dev and prod build code stored in dist folder 
+
+note: if we delete cache and dist folder and run <npx parcel index.html>, folder will come again but build 
+would take some time in first time and next subseqent build will be much faster.
+
+
+18- Parcel will do so many things for you like: this all made react app faster ***
+- Dev build
+- Local server
+- HMR - (hot module replacement) // as soon as you change the page and save, changes will be reflect automatically
+- Parcel using File Watching Algorithm which is written in C++ (parcel will track all the changes)
+- Fater build // because of cache 
+- Image optimization 
+- Minification of file
+- bundle all the files 
+- Compress your file 
+- Consistent hasing 
+- Code Splitting 
+- Diffrential bundling // older version of browser can be supported 
+- Error handling 
+- HTTPs  // read more in parcel website 
+- Tree Shaking algo// remove unused code for you and keep only which is in use 
+- Diffrent dev and prod build 
