@@ -60,6 +60,9 @@ dist: dev and prod build code stored in dist folder
 note: if we delete cache and dist folder and run <npx parcel index.html>, folder will come again but build 
 would take some time in first time and next subseqent build will be much faster.
 
+>> no need to push the dist and parce.cache folder to git as it can be re-generated every time.
+
+>> when we run the application all code coming from dist and parcel.cache folder which is highly compressed.
 
 18- Parcel will do so many things for you like: this all made react app faster ***
 - Dev build
@@ -78,3 +81,14 @@ would take some time in first time and next subseqent build will be much faster.
 - HTTPs  // read more in parcel website 
 - Tree Shaking algo// remove unused code for you and keep only which is in use 
 - Diffrent dev and prod build 
+
+>>>>npx parcel build index.html // will create production build which would be deployed to production system 
+
+
+19- when you run >>> npx parcel build index.html then system will raise error 
+error: Target "main" declares an output file path of "app.js" which does not match the compiled bundle type "html"
+why? packgae.json we have main "app.js" so parcel conflict with entry point so we need to remove it.
+basically this is the main entry point of the application. npm package.json automatically created main for us. so no need to define.
+
+20- how to make app compitible with older browser?
+you can add config in package.json as "browserslist". to check goto browserslist.dev

@@ -1,4 +1,4 @@
-4305
+4309
 139C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional.ps1133785010553360172 0
 90C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\regions\TD.js133785010160343302 0
 51C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\Notes133785001332301581 1
@@ -56,9 +56,9 @@
 69C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\domhandler133785010138726701 1
 110C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\getboundingclientrect.js133785010149868568 0
 85C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\node-addon-api\except.gypi133785010139165292 0
-56C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\.gitignore133419540054364443 0
+56C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\.gitignore133785036428760697 0
 106C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\core\lib\requests\ParcelBuildRequest.js133785010174237979 0
-50C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist133785024763953816 1
+50C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist133785031185123145 1
 115C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\posthtml\node_modules\entities\lib\decode_codepoint.d.ts133785010139184433 0
 87C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\htmlparser2\lib\index.js.map133785010141666736 0
 103C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\posthtml\node_modules\entities\lib\encode.js133785010138514505 0
@@ -72,7 +72,7 @@
 90C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\regions\GF.js133785010149888635 0
 106C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.h133419541492421726 0
 92C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@swc\helpers\_\_iterable_to_array133785010149083744 1
-58C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\package.json133785020589016982 0
+58C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\package.json133785040333851418 0
 92C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\url.js133785010160827009 0
 90C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\regions\KM.js133785010151217698 0
 68C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\scheduler133785020585210405 1
@@ -96,7 +96,7 @@
 109C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\posthtml\node_modules\posthtml-parser\package.json133419541516233830 0
 81C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\react-refresh\babel.js133785010138250109 0
 110C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_stat.c133419541481684528 0
-66C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\Notes\Episode-02.txt133785014203408846 0
+66C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\Notes\Episode-02.txt133785039304973878 0
 87C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\watcher\src\Event.hh133785010146388057 0
 79C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\profiler\src133785010160562313 1
 66C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\Notes\Episode-03.txt133785001332301581 0
@@ -2308,6 +2308,7 @@
 102C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\transformer-svg\lib\dependencies.js133785010150504358 0
 88C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\entities\lib\esm\index.js.map133785010139834032 0
 115C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\utils\test\input\sourcemap\referenced-min.js.map133785010158606062 0
+72C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.34d9c6b2.js.map133785031185123145 0
 75C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\.bin\js-yaml.ps1133419541596690693 0
 107C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\entities\lib\esm\generated\decode-data-html.d.ts133785010139847118 0
 97C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\wai-aria.js133785010161347605 0
@@ -3234,6 +3235,7 @@
 101C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\wasm-threads.js133785010161378387 0
 92C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\wav.js133785010161513837 0
 100C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\wbr-element.js133785010161523707 0
+68C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.34d9c6b2.js133785031185073139 0
 102C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\web-animation.js133785010161533698 0
 100C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\packager-html\lib\HTMLPackager.js133785010163877872 0
 102C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\caniuse-lite\data\features\web-bluetooth.js133785010161543707 0
@@ -3980,7 +3982,7 @@
 95C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-tracer\package.json133785010164868218 0
 104C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-tracer\lib\TracerReporter.js133785010164816053 0
 90C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-dev-server\lib133785010162066456 1
-61C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.html133785024124864425 0
+61C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.html133785031185073139 0
 106C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-dev-server\src\serverErrors.js133785010161185604 0
 104C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-dev-server\src\types.js.flow133785010161093221 0
 108C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\@parcel\reporter-dev-server\lib\ServerReporter.js133785010162014563 0
@@ -4301,6 +4303,8 @@
 100C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\.bin\node-gyp-build-optional-packages.ps1133419541596690693 0
 74C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\.bin\semver.ps1133785010553247510 0
 90C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\node_modules\.bin\update-browserslist-db.ps1133785010553247510 0
+69C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.37c2e008.css133785031185063137 0
+73C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.37c2e008.css.map133785031185123145 0
 68C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.5baa4167.js133785024763930735 0
 69C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.9e4c6fd2.css133785024124844435 0
 73C:\Users\mandl\OneDrive\Desktop\Ankit\abreact\dist\index.9e4c6fd2.css.map133785024124884633 0
