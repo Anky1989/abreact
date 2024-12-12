@@ -2,6 +2,8 @@
 * 
 *
 */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 // this is to create single element
 // createElement three para 
@@ -55,7 +57,7 @@ const parent = React.createElement(
       "div",
       { id: "child1" }, //parent > child
       [
-        React.createElement("h1", { id: "h1" }, "I am H1 tag!!"),
+        React.createElement("h1", { id: "h1" }, "This is Ankit restart react course!!"),
         React.createElement("h2", { id: "h2" }, "I am H2 tag!!"),
       ]
     ), // child > tag

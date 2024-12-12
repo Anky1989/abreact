@@ -16,6 +16,7 @@
     ?? now Q what is diff between package.json and package-lock.json ?
     **package.json: it will keep the parcel approx version e.g. 2.8.3
     **package-lock.json: it will lock the exact version that is 2.8.3 and also keep track of all the versions as dependencies.
+Integrity : its hash key of that pkg, to verify whatever ther in my m/c that same version deployed to production.
 Also after parcel installation it will create new folder call node_modules
     ??now Q is what is node_modules folder ?
     ** Its contains all the code of parcel that we featched from npm, kind of db which have all modules 
