@@ -1,0 +1,6 @@
+1- create script under package.json file to run the dev and production build using that script 
+so need to always type full cmd.
+if you want to know any app how its running and exeution points just goto 
+package.json > find script tag , you'll find all info.
+
+e.g. npx start or npx build 
