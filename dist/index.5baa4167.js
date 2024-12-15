@@ -2951,22 +2951,26 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: " title page"
-    }, void 0, false, {
-        fileName: "app.js",
-        lineNumber: 5,
-        columnNumber: 22
-    }, undefined);
-_c = Title;
+const title = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    className: "head",
+    tabIndex: "5",
+    children: " title page"
+}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 6,
+    columnNumber: 1
+}, undefined);
 let mypagename = "this is first react component page";
 let pageId = 1000;
 const HeadComp = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+            title,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: console.log("inside react component")
+            }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 12,
+                lineNumber: 15,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -2979,25 +2983,24 @@ const HeadComp = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 ]
             }, void 0, true, {
                 fileName: "app.js",
-                lineNumber: 13,
+                lineNumber: 16,
                 columnNumber: 3
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 11,
+        lineNumber: 13,
         columnNumber: 3
     }, undefined);
-_c1 = HeadComp;
+_c = HeadComp;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadComp, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 19,
+    lineNumber: 22,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "HeadComp");
+var _c;
+$RefreshReg$(_c, "HeadComp");
 
   $parcel$ReactRefreshHelpers$6024.postlude(module);
 } finally {
