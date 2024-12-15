@@ -2951,18 +2951,53 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-//const heading = React.createElement("h1",{id: "heading"},"namaste react");
-const headingjsx = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    className: "head",
-    children: "Namaste React"
-}, void 0, false, {
-    fileName: "app.js",
-    lineNumber: 8,
-    columnNumber: 1
-}, undefined);
-console.log(headingjsx);
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: " title page"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 5,
+        columnNumber: 22
+    }, undefined);
+_c = Title;
+let mypagename = "this is first react component page";
+let pageId = 1000;
+const HeadComp = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 12,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                id: "heading",
+                children: [
+                    " my first reach component ",
+                    mypagename,
+                    " and page ID ",
+                    pageId
+                ]
+            }, void 0, true, {
+                fileName: "app.js",
+                lineNumber: 13,
+                columnNumber: 3
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 11,
+        columnNumber: 3
+    }, undefined);
+_c1 = HeadComp;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(headingjsx);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadComp, {}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 19,
+    columnNumber: 13
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadComp");
 
   $parcel$ReactRefreshHelpers$6024.postlude(module);
 } finally {

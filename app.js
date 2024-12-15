@@ -2,14 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-//const heading = React.createElement("h1",{id: "heading"},"namaste react");
+const Title = () => (<h1> title page</h1>);
 
-const headingjsx=( 
-<h1 className="head">
-   Namaste React
-    </h1>);
-console.log(headingjsx);
+let mypagename = "this is first react component page";
+let pageId = 1000;
+
+const HeadComp = () => (
+  <div className="container">
+    <Title/>
+  <h1 id="heading"> my first reach component {mypagename} and page ID {pageId}</h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(headingjsx);                                   
+root.render(<HeadComp/>);                                   
