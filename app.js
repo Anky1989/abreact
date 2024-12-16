@@ -1,22 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+/*
+-- head
+  -- logo
+  -- nav-items
+--body
+  --search
+  --res-cards
+--footer
+  --copyright
+  --links
+*/
 
-const title = (
-<h1 className="head" tabIndex="5"> title page</h1>
-);
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img className="logo" src="https://www.logodesign.net/logo-new/green-and-beige-food-truck-8849ld.png?nwm=1&nws=1&industry=cafe&txt_keyword=cafe"></img>
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+   </div>
+  )
+};
 
-let mypagename = "this is first react component page";
-let pageId = 1000;
-
-const HeadComp = () => (
-  <div className="container">
-    {title}
-    <h2>{console.log("inside react component")}</h2>
-  <h1 id="heading"> my first reach component {mypagename} and page ID {pageId}</h1>
+const AppLayout = () =>{
+  return <div className="app">
+    <Header/>
   </div>
-);
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadComp/>);                                   
+root.render(<AppLayout/>);                                   

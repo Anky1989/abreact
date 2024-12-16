@@ -1,3 +1,30 @@
-#heading {
-    color: brown;
+.header {
+display: flex;
+justify-content: space-between;
+border: 5px solid;
+}
+
+.logo{
+    width: 100px;
+ 
+}
+
+.logo-container {
+    border: 10px;
+}
+
+.nav-items{
+    padding: 0px 20px; 
+}
+
+.nav-items > ul {
+    display: flex;
+    font-size: 25px;
+    list-style-type: none;
+
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
 }
