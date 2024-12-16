@@ -28,3 +28,30 @@ border: 5px solid;
     padding: 10px;
     margin: 10px;
 }
+
+.res-card {
+    width: 200px;
+    margin: 5px;
+    height: 300px;
+  
+}
+
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.search {
+    padding: 20px;
+}
+
+.res-logo{
+    width: 190px;
+}
+
+.res-container {
+display: flex;
+flex-wrap: wrap;
+
+
+}
