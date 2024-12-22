@@ -31,7 +31,9 @@ const Header = () => {
   )
 };
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  {console.log(props)}
+  let {name,cuisines,avgRating,timer} = props;
   return (
     <div className="res-card" style={{backgroundColor:"#f0f0f0"}}>
       <img 
@@ -39,10 +41,10 @@ const RestaurantCard = () => {
       alt="re-logo"
       src="https://b.zmtcdn.com/data/pictures/3/21048793/1fcfb196ba04f2ec5d953c125bcaad44.jpeg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
       />
-      <h3> Kanika Kicten</h3>
-      <h4>North Indian, Pechawari..</h4>
-      <h4>stars 4.4 </h4>
-      <h4> 30min</h4>
+      <h3> {name}</h3>
+      <h4>{cuisines}</h4>
+      <h4>{avgRating} </h4>
+      <h4> {timer}</h4>
     </div>
   )
 }
@@ -52,14 +54,7 @@ return (
   <div className="body">
     <div className="search" > Search</div>
     <div className="res-container">
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
-      <RestaurantCard/>
+      <RestaurantCard name="Kanika Kitchen" cuisines="punjabi" avgRating="4.5" timer="35 min"  />
     </div>
   </div>
 )
