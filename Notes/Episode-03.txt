@@ -4,3 +4,5 @@ if you want to know any app how its running and exeution points just goto
 package.json > find script tag , you'll find all info.
 
 e.g. npx start or npx build 
+
+2- 
