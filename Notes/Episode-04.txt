@@ -1,0 +1,13 @@
+>>>>>> Always use map funtion to loop the data 
+e.g. 
+arr.map((info) => do something///);
+
+>>>>>> always pass "key" whenever you use loop to assing unique id to all child 
+becuase react will always try to render the full tree if no key is assign and 
+if key is there then only the changed node will render other would as-is.
+
+key sohuld always unique and if key is not avialable then use index instead but use some uniqueness atleast.
+but index won't suggested by react as good code practice 
+
+
+>>>>>> 
