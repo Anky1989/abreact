@@ -16,4 +16,18 @@ it will accept two var [state, setState] = useState(intialState);
 -- setState -- set variable which will be triggering the react algo which will update virtual DOM and reder on UI
 -- intialState-- input of data
 
->>>>> 
+>>>>> useState() does not update state variable in the already running code. 
+e.g. if age is 42
+function (){
+  setAge(age + 1); // setAge(42 + 1)
+  setAge(age + 2); // setAge(42 + 1);
+  setAge(age + 3); // setAge(42 + 1);
+}
+// now the problem is age will be 43 rather than 45. its becuase set function does not update the age 
+state variable in the already running code.
+to solve this problem we need to pass an updater function to setAge.
+function (){
+  setAge(a => a + 1); // setAge(42 => 43)
+  setAge(a => a + 1); // setAge(43 => 44)
+  setAge(a => a + 1); // setAge(44 => 45)
+}
