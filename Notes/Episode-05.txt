@@ -10,3 +10,10 @@
 
 
 >>>>> React Hooks 
+useState() --its react hook that lets you add a state var, it will give super power to the local variable by triggering react alog 
+it will accept two var [state, setState] = useState(intialState);
+-- state -- output var 
+-- setState -- set variable which will be triggering the react algo which will update virtual DOM and reder on UI
+-- intialState-- input of data
+
+>>>>> 

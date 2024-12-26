@@ -1,6 +1,6 @@
 import { LOGO_URL } from "../utils/contants";
 
-export const Header = () => {
+export default const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
