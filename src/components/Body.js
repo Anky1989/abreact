@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 //import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   [listOfRestaurants, setResList] = useState([]);
@@ -24,7 +25,7 @@ const Body = () => {
 
   // simmer ui
   if (listOfRestaurants.length === 0) {
-    return <div>Loading...</div>;
+    return <Shimmer />;
   }
 
   console.log("body rendered"); // this will print first then useEffect
