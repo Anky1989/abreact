@@ -19,7 +19,7 @@ const Body = () => {
     const json = await response.json();
     console.log("json", json);
     setResList(
-      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants // optional chaining
     );
   };
 
