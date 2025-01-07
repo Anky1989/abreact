@@ -1,9 +1,33 @@
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
-import { useState } from "react";
+//import resList from "../utils/mockData";
+import { useState, useEffect } from "react";
 
 const Body = () => {
-  [listOfRestaurants, setResList] = useState(resList);
+  [listOfRestaurants, setResList] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  //fetch data from api
+
+  const fetchData = async () => {
+    const response = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await response.json();
+    console.log("json", json);
+    setResList(
+      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+    );
+  };
+
+  // simmer ui
+  if (listOfRestaurants.length === 0) {
+    return <div>Loading...</div>;
+  }
+
+  console.log("body rendered"); // this will print first then useEffect
 
   return (
     <div className="body">
@@ -19,7 +43,10 @@ const Body = () => {
         >
           Fitler Top Restaurant
         </button>
-        <button className="clear-btn" onClick={() => setResList(resList)}>
+        <button
+          className="clear-btn"
+          onClick={() => setResList(listOfRestaurants)}
+        >
           Clear Filter
         </button>
       </div>
