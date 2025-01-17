@@ -2,7 +2,11 @@ import { LOGO_URL } from "../utils/contants";
 import { useState, useEffect } from "react";
 
 export const Header = () => {
-  const btnName = "Logout";
+  let btnName = "Login";
+
+  console.log("btnName", btnName);
+
+  [btnName, setBtnName] = useState("Login");
 
   return (
     <div className="header">
@@ -17,18 +21,12 @@ export const Header = () => {
           <li>Cart</li>
           <button
             className="login"
-            vslue={btnName}
             onClick={() => {
-              {
-                if (btnName === "Logout") {
-                  btnName = "Login";
-                } else {
-                  btnName = "Logout";
-                }
-                console.log("btnName", btnName);
-              }
+              btnName = "Logout";
             }}
-          ></button>
+          >
+            {btnName}
+          </button>
         </ul>
       </div>
     </div>
