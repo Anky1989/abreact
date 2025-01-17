@@ -2,7 +2,7 @@ import { CDN_URL } from "../utils/contants";
 
 const RestaurantCard = (props) => {
   {
-    console.log(props);
+    // console.log(props);
   }
   const { resdata } = props;
 

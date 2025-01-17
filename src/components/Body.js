@@ -4,7 +4,13 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  [listOfRestaurants, setResList] = useState([]);
+  const [listOfRestaurants, setResList] = useState([]);
+
+  const [searchText, setSearchText] = useState([]);
+
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+
+  console.log("body rendered"); // this will print first then useEffect
 
   useEffect(() => {
     fetchData();
@@ -21,6 +27,9 @@ const Body = () => {
     setResList(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants // optional chaining
     );
+    setFilteredRestaurants(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
   // simmer ui
@@ -28,11 +37,31 @@ const Body = () => {
     return <Shimmer />;
   }
 
-  console.log("body rendered"); // this will print first then useEffect
-
   return (
     <div className="body">
-      <div className="search">
+      <div className="filter">
+        <div className="search">
+          <input
+            type="text"
+            className="search-box"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            placeholder="Search Restaurants"
+          />
+          <button
+            className="search-btn"
+            onClick={(e) => {
+              console.log("search clicked", searchText);
+              console.log("listOfRestaurants", listOfRestaurants);
+              const filteredRestaurants = listOfRestaurants.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilteredRestaurants(filteredRestaurants);
+            }}
+          >
+            Search
+          </button>
+        </div>
         <button
           className="filter-btn"
           onClick={() => {
@@ -52,7 +81,7 @@ const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
+        {filteredRestaurants.map((restaurant) => (
           <RestaurantCard key={restaurant.info.id} resdata={restaurant} />
         ))}
       </div>
