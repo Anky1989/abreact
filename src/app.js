@@ -2,7 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Header } from "./components/Header";
 import Body from "./components/Body";
-import UseStateExp from "./components/UseStateExp";
+import {
+  createBrowserRouter,
+  HydratedRouter,
+  RouterProvider,
+} from "react-router/dom";
+
+const BrowserRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+]);
 
 const AppLayout = () => {
   return (
@@ -14,5 +29,4 @@ const AppLayout = () => {
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+root.render(<BrowserRouter />);
