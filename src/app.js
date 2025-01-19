@@ -2,22 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Header } from "./components/Header";
 import Body from "./components/Body";
-import {
-  createBrowserRouter,
-  HydratedRouter,
-  RouterProvider,
-} from "react-router/dom";
-
-const BrowserRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppLayout />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-]);
+import About from "./components/About";
+import Error from "./components/Error";
+import ContactUs from "./components/ContactUs";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
 const AppLayout = () => {
   return (
@@ -28,5 +16,21 @@ const AppLayout = () => {
   );
 };
 
+const BrowserRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contactUs",
+    element: <ContactUs />,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<BrowserRouter />);
+root.render(<RouterProvider router={BrowserRouter} />);
