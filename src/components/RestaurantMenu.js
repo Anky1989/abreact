@@ -1,30 +1,31 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { useParams } from "react-router";
+import { MENU_API } from "../utils/contants";
 
 const RestaurantMenu = () => {
-  const [listOfMenu, setMenuList] = useState([]);
+  const [listOfMenu, setMenuList] = useState(null);
+
+  const { resid } = useParams();
+
+  console.log("resID", resid);
 
   useEffect(() => {
     fetchMenu();
-    console.log("RestaurantMenu rendered");
+    //console.log("RestaurantMenu rendered");
   }, []);
 
   const fetchMenu = async () => {
     console.log("fetchMenu called");
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.406498&lng=78.47724389999999&restaurantId=340856&catalog_qa=undefined&submitAction=ENTER"
-    );
+    const data = await fetch(MENU_API + resid);
     const json = await data.json();
-    console.log("json", json);
+    //console.log("json", json);
     setMenuList(json.data);
   };
 
-  // this line of code will make sure that shimmer ui is displayed until the data is fetched
-  // also listOfMenu.length === 0 will be true until the data is fetched
-  if (listOfMenu.length === 0) {
+  if (listOfMenu === null) {
     return <Shimmer />;
   }
-
   const { name, cuisines, costForTwoMessage } =
     listOfMenu.cards[2]?.card?.card?.info;
 
@@ -42,7 +43,7 @@ const RestaurantMenu = () => {
       <ul>
         {itemCards.map((item) => {
           return (
-            <li>
+            <li key={item.card.info.id}>
               {item.card.info.name} -{" "}
               {item.card.info.price / 100 || item.card.info.defaultPrice / 100}
             </li>
