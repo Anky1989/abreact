@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AboutClass from "./AboutClass";
 
 const About = (props) => {
   const { name } = props;
@@ -6,15 +7,7 @@ const About = (props) => {
   return (
     <div className="about">
       <h1>About our Students</h1>
-      <div className="about-card">
-        <h2>Count: {count}</h2>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-        <h2>Name : {name}</h2>
-        <h2>Roll No : 2018IMT-019</h2>
-        <h2>Course : B.Tech (IT)</h2>
-        <h2>Branch : IT</h2>
-        <h2>Year : 2nd</h2>
-      </div>
+      <AboutClass name="Pallavi Mandloi" rollno="12345" />
     </div>
   );
 };
