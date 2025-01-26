@@ -14,7 +14,6 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Outlet />
-      <AboutClass name="Pallavi bhatt (class)" rollno="2018IMT-020" />
     </div>
   );
 };
@@ -30,7 +29,8 @@ const BrowserRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About name="Ankit bhatt (funtional)" />,
+        //element: <About name="Ankit bhatt (funtional)" />,
+        element: <AboutClass name="Ankit bhatt (class)" />,
       },
       {
         path: "/contactus",
