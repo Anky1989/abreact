@@ -28,7 +28,7 @@ const BrowserRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <About name="Ankit bhatt (funtional)" />,
       },
       {
         path: "/contactus",

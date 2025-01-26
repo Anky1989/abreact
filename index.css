@@ -102,3 +102,8 @@ flex-wrap: wrap;
     border: 1px solid black;
     cursor: pointer;
 }
+
+.about-card {
+    padding: 20px;
+    border: 1px solid black;
+}
