@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Header } from "./components/Header";
 import Body from "./components/Body";
 import About from "./components/About";
+import AboutClass from "./components/AboutClass";
 import Error from "./components/Error";
 import ContactUs from "./components/ContactUs";
 import RestaurantMenu from "./components/RestaurantMenu";
@@ -13,6 +14,7 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Outlet />
+      <AboutClass name="Pallavi bhatt (class)" rollno="2018IMT-020" />
     </div>
   );
 };
