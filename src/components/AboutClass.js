@@ -8,13 +8,18 @@ class AboutClass extends React.Component {
       count1: 0,
       count2: 0,
     };
+    console.log("child constructor");
+  }
+
+  componentDidMount() {
+    console.log("child componentDidMount");
   }
 
   render() {
+    console.log("child render");
     const { name, rollno } = this.props;
     return (
       <div className="about">
-        <h1>About our Students</h1>
         <div className="about-card">
           <h2>Count: {this.state.count}</h2>
           <button
