@@ -15,6 +15,14 @@ class AboutClass extends React.Component {
     console.log("child componentDidMount");
   }
 
+  componentDidUpdate() {
+    console.log("child componentDidUpdate ");
+  }
+
+  componentWillUnmount() {
+    console.log("child componentWillUnmount ");
+  }
+
   render() {
     console.log("child render");
     const { name, rollno } = this.props;
