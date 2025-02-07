@@ -107,3 +107,11 @@ flex-wrap: wrap;
     padding: 20px;
     border: 1px solid black;
 }
+
+.promotedLabel{
+    background-color: #151313;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    position: absolute;
+}

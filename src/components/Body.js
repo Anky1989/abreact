@@ -1,9 +1,10 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 //import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import withPromotedLabel from "./WithPromotedLabel";
 
 const Body = () => {
   const [listOfRestaurants, setResList] = useState([]);
@@ -17,6 +18,8 @@ const Body = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
+  console.log("listOfRestaurants", listOfRestaurants);
 
   //fetch data from api
 
@@ -43,6 +46,10 @@ const Body = () => {
   if (listOfRestaurants.length === 0) {
     return <Shimmer />;
   }
+
+  const PromotedRestaurantCard = withPromotedLabel(RestaurantCard);
+
+  console.log("PromotedRestaurantCard", PromotedRestaurantCard);
 
   return (
     <div className="body">
@@ -93,7 +100,11 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            <RestaurantCard resdata={restaurant} />
+            {restaurant.info.sla.deliveryTime < 20 ? (
+              <PromotedRestaurantCard resdata={restaurant} />
+            ) : (
+              <RestaurantCard resdata={restaurant} />
+            )}
           </Link>
         ))}
       </div>
