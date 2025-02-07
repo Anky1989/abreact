@@ -53,17 +53,17 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="flex">
+        <div className="search m-4 p-4">
           <input
             type="text"
-            className="search-box"
+            className="border border-solid border-gray-300 p-2 rounded-b-lg"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
             placeholder="Search Restaurants"
           />
           <button
-            className="search-btn"
+            className="px-4 py-2 bg-green-100 m-4 rounded-2xl"
             onClick={(e) => {
               console.log("search clicked", searchText);
               console.log("listOfRestaurants", listOfRestaurants);
@@ -76,17 +76,20 @@ const Body = () => {
             Search
           </button>
         </div>
-        <button
-          className="filter-btn"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.2
-            );
-            setResList(filteredList);
-          }}
-        >
-          Fitler Top Restaurant
-        </button>
+        <div className="filter m-4 p-4 flex items-center">
+          <button
+            className="px-4 py-2 bg-green-100 m-4"
+            onClick={() => {
+              const filteredList = listOfRestaurants.filter(
+                (res) => res.info.avgRating > 4.2
+              );
+              setResList(filteredList);
+            }}
+          >
+            Fitler Top Restaurant
+          </button>
+        </div>
+
         <button
           className="clear-btn"
           onClick={() => setResList(listOfRestaurants)}
@@ -94,7 +97,7 @@ const Body = () => {
           Clear Filter
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredRestaurants.map((restaurant) => (
           <Link
             key={restaurant.info.id}

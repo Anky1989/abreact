@@ -8,13 +8,16 @@ const RestaurantCard = (props) => {
 
   const { name, cuisines, costForTwo, avgRating, sla } = resdata?.info; // chaining the data
   return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+    <div
+      className="m-4 p-4 w-[200px]  rounded-b-lg "
+      style={{ backgroundColor: "#f0f0f0" }}
+    >
       <img
-        className="res-logo"
+        className="rounded-lg"
         alt="re-logo"
         src={CDN_URL + resdata.info.cloudinaryImageId}
       />
-      <h3>{name}</h3>
+      <h3 className="font-bold py-2 text-lg">{name}</h3>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{costForTwo}</h4>
       <h4>{avgRating} </h4>
