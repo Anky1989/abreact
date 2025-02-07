@@ -11,11 +11,11 @@ export const Header = () => {
   console.log("Header render"); // complete component render when state changes
 
   return (
-    <div className="header">
-      <div className="logo-container">
+    <div className="header wd-100">
+      <div className="logo-container wd-100">
         <img className="logo" src={LOGO_URL}></img>
       </div>
-      <div className="nav-items">
+      <div className="nav-items wd-100 bg-red">
         <ul>
           <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>

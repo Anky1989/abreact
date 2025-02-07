@@ -1,4 +1,7 @@
 {
+  "alias": {
+    "process": false
+  },
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is React by Ankit Bhatt",
@@ -22,10 +25,10 @@
     "parcel": "^2.13.3",
     "postcss": "^8.5.1",
     "process": "^0.11.10",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.4"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.3",
+    "@tailwindcss/postcss": "^4.0.4",
     "install": "^0.13.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
