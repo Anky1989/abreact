@@ -12,7 +12,17 @@ const useRestaurantMenu = (resid) => {
     console.log("fetchMenu called");
     const data = await fetch(MENU_API + resid);
     const json = await data.json();
+
     //console.log("json", json);
+
+    const MenuItem =
+      json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+        (item) =>
+          item.card.card ===
+          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+      );
+    // console.log("MenuItem", MenuItem);
+    // console.log("json", json);
     setRestInfo(json.data);
   };
 
