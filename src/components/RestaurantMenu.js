@@ -9,7 +9,7 @@ const RestaurantMenu = () => {
 
   const listOfMenu = useRestaurantMenu(resid);
 
-  const [showIndex, setShowIndex] = useState(0);
+  const [showIndex, setShowIndex] = useState(null);
 
   console.log("resID", resid);
 
@@ -50,6 +50,7 @@ const RestaurantMenu = () => {
               key={item?.card?.card?.title}
               data={item?.card?.card}
               showItem={index === showIndex ? true : false} // parent component should control the accordion
+              setShowIndex={() => setShowIndex(index)}
             />
           );
         })}
