@@ -7,6 +7,8 @@ import RestaurantCategory from "./RestaurantCategory";
 const RestaurantMenu = () => {
   const { resid } = useParams();
 
+  const dummyData = "Pros drilling";
+
   const listOfMenu = useRestaurantMenu(resid);
 
   const [showIndex, setShowIndex] = useState(null);
@@ -51,6 +53,7 @@ const RestaurantMenu = () => {
               data={item?.card?.card}
               showItem={index === showIndex ? true : false} // parent component should control the accordion
               setShowIndex={() => setShowIndex(index)}
+              dummyData={dummyData}
             />
           );
         })}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory = ({ data, showItem, setShowIndex }) => {
+const RestaurantCategory = ({ data, showItem, setShowIndex, dummyData }) => {
   //console.log("data", data);
 
   const handleClick = () => {
@@ -28,7 +28,7 @@ const RestaurantCategory = ({ data, showItem, setShowIndex }) => {
         </div>
         {/*Accordions for item category body */}
         {/*by default accordion should be collapsed */}
-        {showItem && <ItemList items={data.itemCards} />}
+        {showItem && <ItemList items={data.itemCards} dummyData={dummyData} />}
       </div>
     </div>
   );
