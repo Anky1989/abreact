@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory = ({ data }) => {
+const RestaurantCategory = ({ data, showItem }) => {
   //console.log("data", data);
-  const [showItem, setShowItem] = useState(false);
-
-  const handleClick = () => {
-    console.log("clicked", showItem);
-    setShowItem(!showItem); // toggle the accordion if true then false and vice versa
-  };
 
   return (
     <div>
@@ -16,7 +10,7 @@ const RestaurantCategory = ({ data }) => {
       <div className="w-6/12 mx-auto my-6 bg-green-200 shadow-lg p-4">
         <div
           className="flex justify-between cursor-pointer"
-          onClick={handleClick}
+          //  onClick={handleClick}
         >
           <span className="font-bold text-lg">
             {data.title} ({data.itemCards.length})

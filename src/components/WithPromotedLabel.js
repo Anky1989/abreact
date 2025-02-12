@@ -13,5 +13,5 @@ const WithPromotedLabel = (RestaurantCard) => {
     );
   };
 };
-
+//@type:"type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
 export default WithPromotedLabel;

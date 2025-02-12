@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
@@ -7,6 +8,8 @@ const RestaurantMenu = () => {
   const { resid } = useParams();
 
   const listOfMenu = useRestaurantMenu(resid);
+
+  const [showIndex, setShowIndex] = useState(0);
 
   console.log("resID", resid);
 
@@ -40,11 +43,13 @@ const RestaurantMenu = () => {
       </p>
       {/*accordions for item category */}
       <div>
-        {itemCategory.map((item) => {
+        {itemCategory.map((item, index) => {
+          //controlled component
           return (
             <RestaurantCategory
               key={item?.card?.card?.title}
               data={item?.card?.card}
+              showItem={index === showIndex ? true : false} // parent component should control the accordion
             />
           );
         })}
