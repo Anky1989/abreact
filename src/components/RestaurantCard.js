@@ -1,10 +1,13 @@
+import { useContext } from "react";
 import { CDN_URL } from "../utils/contants";
-
+import UserContext from "../utils/UserContext";
 const RestaurantCard = (props) => {
   {
     // console.log(props);
   }
   const { resdata } = props;
+
+  const { loggedInUser } = useContext(UserContext);
 
   const { name, cuisines, costForTwo, avgRating, sla } = resdata?.info; // chaining the data
   return (
@@ -22,6 +25,7 @@ const RestaurantCard = (props) => {
       <h4>{costForTwo}</h4>
       <h4>{avgRating} </h4>
       <h4>{sla.deliveryTime} minutes</h4>
+      <h4>{loggedInUser}</h4>
     </div>
   );
 };

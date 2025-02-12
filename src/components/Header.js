@@ -1,14 +1,19 @@
 import { LOGO_URL } from "../utils/contants";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 export const Header = () => {
   [btnName, setBtnName] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
 
-  console.log("Header render"); // complete component render when state changes
+  const { loggedInUser } = useContext(UserContext); // get the value from the context
+
+  console.log(loggedInUser);
+
+  //console.log("Header render"); // complete component render when state changes
 
   return (
     <div className="flex justify-between bg-pink-100 shadow-lg m-5">
@@ -39,6 +44,7 @@ export const Header = () => {
           >
             {btnName}
           </button>
+          <li className="px-4 font-bold">{loggedInUser}</li>
         </ul>
       </div>
     </div>
